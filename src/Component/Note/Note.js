@@ -1,10 +1,10 @@
 import "./Note.css";
 
-const Note = () => {
+const Note = (props) => {
   return (
     <div className="note-container">
-      <h1>For the Title</h1>
-      <p>For the content</p>
+      <h1>{props.title}</h1>
+      <p>{props.content}</p>
     </div>
   );
 };
