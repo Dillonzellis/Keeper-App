@@ -1,4 +1,5 @@
 import "./Note.css";
+import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 
 const Note = (props) => {
   const handleClick = () => {
@@ -6,10 +7,12 @@ const Note = (props) => {
   };
 
   return (
-    <div className="note-container">
+    <div className="note">
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <button onClick={handleClick}>DELETE</button>
+      <button onClick={handleClick}>
+        <DeleteForeverIcon />
+      </button>
     </div>
   );
 };
